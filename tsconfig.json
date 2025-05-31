@@ -19,6 +19,14 @@
     "noImplicitThis": true,
     "noImplicitReturns": true
   },
+  "paths": {
+    "@/*": ["./*"],
+    "@libs/*": ["./libs/*"],
+    "@api/*": ["./libs/api/*"],
+    "@utils/*": ["./libs/utils/*"],
+    "@repositories/*": ["./src/libs/repositories/*"],
+    "@interfaces/*": ["./src/libs/interfaces/*"]
+  },
   "exclude": ["node_modules"],
   "include": ["./src/*"]
 }
