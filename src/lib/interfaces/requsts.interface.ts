@@ -16,9 +16,26 @@ interface ICalculateNutrientsResponse {
   nutrients: INutrient[];
 }
 
-interface IMealSaveRequest {}
+type Rate = 1 | 2 | 3 | 4 | 5;
+interface IMealSaveRequest {
+  imageId: string;
+  name: string;
+  ingredients: IIngredient[];
+  nutrients: INutrient[];
+  rate: Rate;
+  nickname?: string;
+  feedback?: string;
+}
 
-interface IMealSaveResponse {}
+interface IMealSaveResponse {
+  imageId: string;
+  name: string;
+  ingredients: IIngredient[];
+  nutrients: INutrient[];
+  rate: Rate;
+  nickname?: string;
+  feedback?: string;
+}
 
 export {
   IAnalyzeImageRequest,
