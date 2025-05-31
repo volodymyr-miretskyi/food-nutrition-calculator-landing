@@ -1,5 +1,3 @@
 export class CalculatorAPIRepository {
   constructor() {}
-
-  
 }

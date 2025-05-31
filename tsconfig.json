@@ -21,11 +21,11 @@
   },
   "paths": {
     "@/*": ["./*"],
-    "@libs/*": ["./libs/*"],
-    "@api/*": ["./libs/api/*"],
-    "@utils/*": ["./libs/utils/*"],
-    "@repositories/*": ["./src/libs/repositories/*"],
-    "@interfaces/*": ["./src/libs/interfaces/*"]
+    "@lib/*": ["./src/lib/*"],
+    "@api/*": ["./src/lib/api/*"],
+    "@utils/*": ["./src/lib/utils/*"],
+    "@repositories/*": ["./src/lib/repositories/*"],
+    "@interfaces/*": ["./src/lib/interfaces/*"]
   },
   "exclude": ["node_modules"],
   "include": ["./src/*"]
