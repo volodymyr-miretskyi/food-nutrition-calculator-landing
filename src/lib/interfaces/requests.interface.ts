@@ -5,6 +5,7 @@ interface IAnalyzeImageRequest {
 }
 
 interface IAnalyzeImageResponse {
+  imageId: string;
   ingredients: IIngredient[];
 }
 
@@ -17,6 +18,7 @@ interface ICalculateNutrientsResponse {
 }
 
 type Rate = 1 | 2 | 3 | 4 | 5;
+
 interface IMealSaveRequest {
   imageId: string;
   name: string;
@@ -38,6 +40,7 @@ interface IMealSaveResponse {
 }
 
 export {
+  Rate,
   IAnalyzeImageRequest,
   IAnalyzeImageResponse,
   ICalculateNutrientsRequest,
